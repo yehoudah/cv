@@ -1,0 +1,16 @@
+.cv-container {
+    max-width: 100%;
+    padding: 0 1.5rem;
+    margin: auto;
+    @media(min-width:768px){
+        width: 75rem;
+    }
+    @media(min-width:992px){
+        width: 96rem;
+    }
+    @media(min-width:1200px){
+        width: 120rem;
+    }
+   
+    
+}

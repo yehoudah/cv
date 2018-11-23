@@ -1,0 +1,22 @@
+.cv-btn {
+    display: inline-flex;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    padding: 1.5rem 2rem;
+    border: none;
+    cursor: pointer;
+    &:focus{
+        outline:none;
+    }
+    &--primary {
+        background-color: #474d5d;
+        &:hover {
+            background: #373d4c;
+            color: #cccccc;
+        }
+    }
+    &--secondary{
+        background-color: $primary-red
+    }
+}
