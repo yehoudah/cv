@@ -1,0 +1,45 @@
+.cv-contact {
+
+    &__title {
+        font-size: 2rem;
+        font-weight: 400;
+        color: #fff;
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+    }
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        @media (min-width: 768px) {
+            flex-direction: row;
+        }
+    }
+    &__details {
+        flex: 33.33%;
+    }
+    &__form {
+        flex: 66.66%;
+        .cv-btn {
+            margin-left: auto;
+        }
+    }
+
+    &__field-group {
+
+        margin-bottom: 3rem;
+       
+    }
+    &__field {
+        width: 100%;
+        display: block;
+        font-size: inherit;
+        color: #93959c;
+        background: #585f73;
+        border: none;
+        padding: 1.5rem;
+        
+        outline: none;
+        font-style: italic;
+    }
+}
