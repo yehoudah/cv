@@ -10,6 +10,10 @@
     &--blue {
         background-color: $color-section-blue;
     }
+    &--dark {
+        background-color: $color-section-dark;
+    }
+    
     &__heading {
         margin-bottom: 5rem;
     }

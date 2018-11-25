@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>cv</title>   
+    <title>cv</title>
     <link rel="stylesheet" href="https://unpkg.com/nanogallery2@2.3.0/dist/css/nanogallery2.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -202,6 +202,34 @@
                     <h3 class="cv-section__subtitle">showcase of my latest works</h3>
                 </div>
                 <div id="portfolio-gallery"></div>
+            </div>
+        </section>
+        <section id="contact" class="cv-section cv-section--dark">
+            <div class="cv-container">
+                <div class="cv-contact__wrapper">
+                    <div class="cv-contact__details">
+                        <h4 class="cv-contact__title">CONTACT DETAILS</h4>
+                    </div>
+                    <div class="cv-contact__form">
+                        <h4 class="cv-contact__title">SHOOT A MESSAGE!</h4>
+                        <form action="" name="contact" method="POST" netlify>
+                            <div class="cv-contact">
+                                <div class="cv-contact__field-group">
+                                    <input type="text" class="cv-contact__field" name="name" id="" placeholder="Your name...">
+                                </div>
+                                <div class="cv-contact__field-group">
+                                    <input type="email" class="cv-contact__field" name="email" id="" placeholder="Your email..">
+                                </div>
+
+                                <div class="cv-contact__field-group">
+                                    <textarea class="cv-contact__field" name="message" id="" cols="30" rows="5" placeholder="Your message."></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="cv-btn cv-btn--secondary">Send message</button>
+                        </form>
+
+                    </div>
+                </div>
             </div>
         </section>
     </main>
