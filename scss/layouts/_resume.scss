@@ -3,20 +3,22 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        @media(min-width:768px){
+        @media(min-width: 768px) {
             flex-direction: row;
-            align-items:flex-start;
+            align-items: flex-start;
         }
     }
     &__time {
-        padding-inline-end: 4rem;
+        display: flex;
         margin-bottom: 3rem;
-        @media(min-width:768px){
+        @media(min-width: 768px) {
+            padding-inline-end: 4rem;
             margin-bottom: 0;
         }
-        span {
+        .inner {
             display: flex;
-            align-items: center;
+            flex-direction: column;
+            justify-content: center;
             font-size: 1.8rem;
             font-weight: 300;
             color: #fff;
@@ -24,40 +26,44 @@
             text-align: center;
             width: 14rem;
             height: 14rem;
-            padding: 4rem 0;
-            -webkit-border-radius: 50%;
             border-radius: 50%;
         }
     }
     &__details-wrap {
         margin-left: auto;
         padding-bottom: 5rem;
-        
-        @media(min-width:768px){
+        @media(min-width: 768px) {
             padding-inline-start: 4rem;
             border-left: 1px solid #eaeaea;
         }
-       
     }
     &__details {
-        position: relative;        
+        position: relative;
         border-bottom: solid 4px #eeeeee;
         padding: 2rem 4.5rem;
-
-        &--grey{
+        &--grey {
             background: #f3f3f3;
         }
-       
         &::before {
             content: "";
             position: absolute;
-            top: 20px;
-            left:-10px;
+            right: 0;
+            left: 0;
+            top: -10px;
+            margin: auto;
             width: 0;
             height: 0;
             border-style: solid;
-            border-width: 8px 10px 8px 0;
-            border-color: transparent #f3f3f3 transparent transparent;
+            border-width: 0 10px 10px 10px;
+            border-color: transparent transparent #f3f3f3 transparent;
+            @media(min-width: 768px) {
+                top: 30px;
+                left: -10px;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent #f3f3f3 transparent transparent;
+                margin: 0;
+            }
+            
         }
     }
     &__title {
