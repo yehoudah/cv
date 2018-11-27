@@ -29,6 +29,10 @@ ul {
 a[download] {
   text-decoration: none; }
 
+textarea {
+  overflow: auto;
+  resize: vertical; }
+
 .color-w {
   color: #fff; }
 
